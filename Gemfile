@@ -2,6 +2,8 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.0.7'
 
+gem "autotest-growl"
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
@@ -10,6 +12,10 @@ gem 'rails', '3.0.7'
 group :development do
 	gem 'sqlite3'
 	gem 'rspec-rails', ">= 2.0.0.beta"
+	gem 'autotest'
+    gem 'ZenTest'
+    gem 'autotest-growl'
+    gem 'autotest-fsevent'
 end
 
 group :production do
@@ -18,8 +24,10 @@ end
 
 group :test do
 	gem 'sqlite3'
-	gem 'rspec-rails', ">= 2.0.0.beta"
+	gem 'rspec', ">= 2.0.0.beta"
 	gem 'webrat', '0.7.1'
+	gem 'ZenTest'
+	gem 'spork', '0.9.0.rc7'
 end
 
 
